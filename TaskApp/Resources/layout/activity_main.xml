@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        tools:ignore="MissingDimension">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="wrap_content"
+            android:id="@+id/toolbar1"
+            android:layout_height="?android:attr/actionBarSize"
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="@color/my_green"
+            android:theme="@android:style/ThemeOverlay.Material.ActionBar"
+            app:title="Todo"
+            android:layout_weight="4"
+            app:titleTextColor="#ffffff"
+            app:subtitleTextColor="@color/my_gray"
+            app:logo="@drawable/ic_todolist"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+             android:layout_weight="1"
+            android:id="@+id/addB"
+            android:background="@color/my_green"
+            android:src="@drawable/ic_add"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView1"/>
+
+</LinearLayout>

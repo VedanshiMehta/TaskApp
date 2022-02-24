@@ -38,8 +38,7 @@ namespace TaskApp
         {
             string taskname = myedittext.Text;
 
-            if (taskname != string.Empty)
-            {
+           
                 taskDataTable = new TaskDataTable();
 
                 taskDataTable.taskName = myedittext.Text;
@@ -58,15 +57,11 @@ namespace TaskApp
 
 
                 }
-                Intent k = new Intent(this, typeof(MainActivity));
-                StartActivity(k);
-            }
-            else
-            {
 
-                Toast.MakeText(this, "Enter Task", ToastLength.Short).Show();
-
-            }
+  
+            
+            Intent m = new Intent(this, typeof(MainActivity));
+            StartActivity(m);
 
 
 

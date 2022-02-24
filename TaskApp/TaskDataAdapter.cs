@@ -15,10 +15,11 @@ namespace TaskApp
 {
     class TaskDataAdapter : RecyclerView.Adapter
     {
-        private List<TaskDataTable> viewatalist;
-        private MainActivity mainActivity;
+       
         private TaskDataBase tDB;
         private TaskDataTable taskdatatable;
+        private List<TaskDataTable> viewatalist;
+        private MainActivity mainActivity;
 
         public TaskDataAdapter(List<TaskDataTable> viewatalist, MainActivity mainActivity)
         {

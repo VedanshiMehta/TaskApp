@@ -50,21 +50,24 @@ namespace TaskApp
 
         private List<TaskDataTable> GetTaskData()
         {
-            tDB = new TaskDataBase();
-            var taskdata = tDB.ReadTask();
+          
+           
+                tDB = new TaskDataBase();
+                var taskdata = tDB.ReadTask();
 
-            viewatalist = new List<TaskDataTable>();
+                viewatalist = new List<TaskDataTable>();
 
-            viewatalist.AddRange(taskdata);
+                viewatalist.AddRange(taskdata);
 
-            return viewatalist;
+                return viewatalist;
+            
         }
 
         private void AddData_Click(object sender, System.EventArgs e)
         {
             Intent i = new Intent(this, typeof(AddtaskActivity));
             StartActivity(i);
-            Finish();
+      
         }
 
 
